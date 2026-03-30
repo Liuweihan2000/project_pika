@@ -1,0 +1,32 @@
+{
+  "server": {
+    "port": 8787
+  },
+  "database": {
+    "supabase_rest_url": "PLACEHOLDER",
+    "supabase_anon_key": "PLACEHOLDER",
+    "supabase_svc_key": "PLACEHOLDER",
+    "timeout": 15
+  },
+  "llm": {
+    "gemini": {
+      "api_key": "",
+      "model": "v1beta/models/gemini-2.0-flash:generateContent"
+    },
+    "minimax": {
+      "api_key": "PLACEHOLDER",
+      "model": "MiniMax-M2.1-highspeed"
+    },
+    "rate_limit_rpm": 30,
+    "timeout": 30
+  },
+  "agent": {
+    "startup_stagger_min": 0.0,
+    "startup_stagger_max": 12.0,
+    "loop_interval_min": 120.0,
+    "loop_interval_max": 240.0,
+    "missing_agent_sleep": 15.0,
+    "scheduler_interval": 20.0
+  }
+}
+
